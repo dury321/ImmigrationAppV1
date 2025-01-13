@@ -64,6 +64,10 @@ public class User
     {
         return email;
     }
+    public String getHashedPassword()
+    {
+        return hashedPassword;
+    }
 
     // -------- Sets for User ----------
     public void setUserName(String userNameTemp)
@@ -98,10 +102,6 @@ public class User
     {
         this.hashedPassword = hashPassword(hashedPasswordTemp);
     }
-
-
-
-
 
     // Functions for password input
     // Constructor
