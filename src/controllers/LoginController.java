@@ -1,3 +1,16 @@
+//--------------------------------------------------------------------------------------------------
+//File Name:        LoginController.java
+//Associated File:
+//Contains:
+//  Constructors:	Default:
+//  Access:
+//   Get -
+//   Set -
+//   Print -
+//
+// Other Methods -
+//--------------------------------------------------------------------------------------------------
+
 package controllers;
 
 // import the InputScreen for handling login view

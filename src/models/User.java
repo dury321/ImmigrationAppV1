@@ -22,8 +22,9 @@ public class User
     private String userName;
     private String streetAddress;
     private String cityAddress;
+    private String stateAddress;
     private String zipCode;
-    private int phoneNumber;
+    private String phoneNumber;
     private String email;
 
     // private String for password
@@ -50,13 +51,18 @@ public class User
     {
         return cityAddress;
     }
+    // return the user's state address
+    public String getStateAddress()
+    {
+        return stateAddress;
+    }
     // return the user's zip code
     public String getZipCode()
     {
         return zipCode;
     }
     // return the user's
-    public int getPhoneNumber()
+    public String getPhoneNumber()
     {
         return phoneNumber;
     }
@@ -86,11 +92,15 @@ public class User
     {
         this.cityAddress = cityAddressTemp;
     }
+    public void setStateAddress(String stateAddressTemp)
+    {
+        this.stateAddress = stateAddressTemp;
+    }
     public void setZipCode(String zipCodeTemp)
     {
         this.zipCode = zipCodeTemp;
     }
-    public void setPhoneNumber(int phoneNumberTemp)
+    public void setPhoneNumber(String phoneNumberTemp)
     {
         this.phoneNumber = phoneNumberTemp;
     }
@@ -103,14 +113,28 @@ public class User
         this.hashedPassword = hashPassword(hashedPasswordTemp);
     }
 
-    // Functions for password input
-    // Constructor
+
+    // Constructor (overloaded) -- userName and password input
     public User(String userName, String password)
     {
         // set the users userName
         setUserName(userName);
         // set the users password through hashing it in BCrypt
         setHashedPassword(password);
+    }
+
+    // Constructor (overloaded) -- set fields for user
+    public User(String name, String streetAddress, String cityAddress,
+                String stateAddress, String zipCode, String phoneNumber, String email)
+    {
+        // set the user's information
+        setName(name);
+        setStreetAddress(streetAddress);
+        setCityAddress(cityAddress);
+        setStateAddress(stateAddress);
+        setZipCode(zipCode);
+        setPhoneNumber(phoneNumber);
+        setEmail(email);
     }
 
     // private
@@ -125,6 +149,8 @@ public class User
     {
         return BCrypt.checkpw(password, this.hashedPassword);
     }
+
+
 
 
 
