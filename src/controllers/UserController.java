@@ -20,7 +20,11 @@ import models.User;
 
 public class UserController
 {
+    // new user profile to input
     private User userProfile;
+
+    // return the user's profile
+    public User getUserProfile() { return userProfile; }
 
     // input User information
     public void inputUserInformation()

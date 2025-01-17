@@ -42,10 +42,7 @@ public class User
         return userName;
     }
     // return the user's street address
-    public String getStreetAddress()
-    {
-        return streetAddress;
-    }
+    public String getStreetAddress() { return streetAddress; }
     // return the user's city address
     public String getCityAddress()
     {
@@ -80,10 +77,7 @@ public class User
     {
         this.userName = userNameTemp;
     }
-    public void setName(String nameTemp)
-    {
-        this.name = nameTemp;
-    }
+    public void setName(String nameTemp) { this.name = nameTemp; }
     public void setStreetAddress(String streetAddressTemp)
     {
         this.streetAddress = streetAddressTemp;

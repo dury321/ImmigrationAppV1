@@ -19,6 +19,10 @@ public class Main {
         // new LogicController to handle login logic
         LoginController loginController = new LoginController(inputScreen);
 
+        // new user menu input
+        // TODO: Abstract this away so that we initialize this menu selection elsewhere
+        int menuSelection;
+
         // let user create username/password
         loginController.login();
 
