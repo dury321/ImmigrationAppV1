@@ -21,7 +21,5 @@ This project is still in its early development phase. At present, the codebase i
 - [ ] Develop a front-end interface for improved user interaction
 - [ ] Collaborate with legal experts for content verification
 
-## Contribution
-As this is a work in progress, contributions are welcome! If you're a developer, immigration expert, or UX designer interested in contributing, feel free to submit a pull request or open an issue.
 ---
 
